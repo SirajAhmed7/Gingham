@@ -12,8 +12,18 @@
   color: $color-bg;
 }
 
+.hero-section {
+  padding: 3.2rem 6.4rem;
+  min-height: 100vh;
+  position: relative;
+  background: url("../img/cliped-hero-img.webp") no-repeat;
+  background-position: 100% 0%;
+  background-size: 55%;
+}
+
 .navbar {
-  margin: 3.2rem 6.4rem 0;
+  margin: 0 auto;
+  max-width: 140.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,11 +39,11 @@
     font-weight: 500;
     font-size: 1.6rem;
     text-decoration: none;
-    color: $color-text-white;
+    color: $color-white;
     transition: 0.15s ease;
 
     &:hover {
-      color: rgba($color-text-white, 0.7);
+      color: rgba($color-white, 0.7);
     }
 
     &-cta {
@@ -67,4 +77,9 @@
       }
     }
   }
+}
+
+.main-title {
+  color: $color-text-white;
+  font-family: "Josefin Sans", sans-serif;
 }
