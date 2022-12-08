@@ -1,5 +1,6 @@
-import "./css/index.scss";
+import Navbar from "./Components/Navbar";
+import "./sass/main.scss";
 
 export default function Home() {
-  return <h1>gingham</h1>;
+  return <Navbar />;
 }

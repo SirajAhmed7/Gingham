@@ -1,0 +1,70 @@
+@mixin nav-button {
+  background-color: $color-white;
+  content: "Shop now";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.3s ease;
+  height: 100%;
+  width: 100%;
+  padding: 1.2rem 2.5rem;
+  color: $color-bg;
+}
+
+.navbar {
+  margin: 3.2rem 6.4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .navlink-box {
+    display: flex;
+    gap: 4.8rem;
+    align-items: center;
+  }
+
+  .navlink {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: $color-text-white;
+    transition: 0.15s ease;
+
+    &:hover {
+      color: rgba($color-text-white, 0.7);
+    }
+
+    &-cta {
+      background-color: $color-white;
+      color: $color-bg;
+      padding: 1.2rem 2.5rem;
+      border-radius: 4px;
+      transition: 0.2s ease;
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+        @include nav-button;
+        transform: translateY(100%);
+      }
+      &::before {
+        @include nav-button;
+        transform: translateY(0);
+      }
+    }
+
+    &-cta:hover {
+      &::after {
+        transform: translateY(0);
+        color: $color-bg;
+      }
+
+      &::before {
+        transform: translateY(-100%);
+        color: $color-bg;
+      }
+    }
+  }
+}
