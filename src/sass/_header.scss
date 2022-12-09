@@ -64,27 +64,14 @@
       transition: 0.2s ease;
       position: relative;
       overflow: hidden;
-
-      &::after {
-        @include nav-button;
-        transform: translateY(100%);
-      }
-      &::before {
-        @include nav-button;
-        transform: translateY(0);
-      }
+      border: 1px solid $color-white;
     }
 
     &-cta:hover {
-      &::after {
-        transform: translateY(0);
-        color: $color-bg;
-      }
-
-      &::before {
-        transform: translateY(-100%);
-        color: $color-bg;
-      }
+      background-color: transparent;
+      color: $color-white;
+      backdrop-filter: blur(3px) saturate(110%);
+      -webkit-backdrop-filter: blur(3px) saturate(110%);
     }
   }
 }
@@ -138,7 +125,7 @@
   padding: 1.6rem 4.2rem;
   display: inline-block;
   position: relative;
-  transition: all 0.2s ease, transform 0.2s 0.2s ease-in-out;
+  transition: all 0.2s ease, transform 0.2s 0.2s ease;
 
   &::after {
     content: "Shop now";

@@ -19,7 +19,7 @@ export default function Hero() {
       backgroundColor: "white",
       transform: "translatey(0)",
       color: "#000a04",
-      transition: "all 0.2s 0.2s ease, transform 0.2s ease-in-out",
+      transition: "all 0.2s 0.2s ease, transform 0.2s ease",
     });
   };
 
