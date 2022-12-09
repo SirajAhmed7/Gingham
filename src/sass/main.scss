@@ -2,6 +2,7 @@
 @import "typography";
 @import "utilities";
 
-@import "header";
-@import "foundIn";
-@import "essentials";
+@import "./sections/header";
+@import "./sections/foundIn";
+@import "./sections/essentials";
+@import "./sections/perfectfit";

@@ -1,5 +1,5 @@
-import HeadingH2 from "./HeadingH2";
-import LearnMore from "./LearnMore";
+import HeadingH2 from "../HeadingH2";
+import LearnMore from "../LearnMore";
 
 export default function Essentials() {
   return (

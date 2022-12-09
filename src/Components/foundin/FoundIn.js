@@ -1,4 +1,4 @@
-import HeadingH2 from "./HeadingH2";
+import HeadingH2 from "../HeadingH2";
 import LogoContainer from "./LogoContainer";
 
 export default function FoundIn() {
