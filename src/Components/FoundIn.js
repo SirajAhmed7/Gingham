@@ -4,7 +4,7 @@ import LogoContainer from "./LogoContainer";
 export default function FoundIn() {
   return (
     <section className="foundin-section">
-      <HeadingH2 text="Found in your favourite stores" />
+      <HeadingH2 text="Found in your favourite stores" center={true} />
       <LogoContainer />
     </section>
   );

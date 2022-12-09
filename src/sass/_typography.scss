@@ -2,6 +2,10 @@
   font-family: $josefin;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .section-heading {
   font-family: $josefin;
   font-size: 6rem;
@@ -9,5 +13,58 @@
   line-height: 110%;
   letter-spacing: -0.02em;
   color: $color-text-white;
-  text-align: center;
+}
+
+.section-text {
+  font-family: $cardo;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 172%;
+  letter-spacing: 0.01em;
+  color: $color-text-white;
+  margin-top: 3.2rem;
+  margin-bottom: 4.8rem;
+  max-width: 37rem;
+}
+
+.section-link {
+  &:link,
+  &:visited {
+    font-family: $cardo;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: $color-text-white;
+    text-decoration: none;
+  }
+
+  & img {
+    margin-left: 0.6rem;
+    margin-bottom: -4px;
+    // transition: all 0.25s ease;
+  }
+
+  &:hover,
+  &:active {
+    // border-bottom: 1px solid $color-text-white;
+    text-decoration: underline;
+  }
+
+  &:hover img,
+  &:active img {
+    animation: link-hover 0.45s ease;
+    // transform: translateX(7px);
+  }
+}
+
+@keyframes link-hover {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(7px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

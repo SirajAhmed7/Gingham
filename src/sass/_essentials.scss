@@ -1,0 +1,22 @@
+.essentials {
+  &-section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    // grid-template-columns: 0.9fr 1fr;
+    align-items: center;
+  }
+
+  &-imgbox img {
+    width: 100%;
+  }
+
+  &-content {
+    margin: 0 0 0 19.2rem;
+    max-width: 39.1rem;
+  }
+}
