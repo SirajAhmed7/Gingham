@@ -64,6 +64,11 @@ export default function Hero() {
           </a>
         </div>
       </div>
+      <img
+        src="./img/pattern-svg.svg"
+        className="pattern pattern-hero"
+        draggable="false"
+      />
     </section>
   );
 }

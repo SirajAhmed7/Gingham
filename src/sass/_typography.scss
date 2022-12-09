@@ -1,3 +1,13 @@
 .main-heading {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: $josefin;
+}
+
+.section-heading {
+  font-family: $josefin;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: $color-text-white;
+  text-align: center;
 }
