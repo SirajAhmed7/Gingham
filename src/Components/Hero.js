@@ -23,6 +23,21 @@ export default function Hero() {
     });
   };
 
+  const handleMouseDown = function () {
+    setCta({
+      backgroundColor: "rgb(255,255,255, .3)",
+      transform: "translatey(-100%)",
+      color: "white",
+    });
+  };
+  const handleMouseUp = function () {
+    setCta({
+      backgroundColor: "transparent",
+      transform: "translatey(-100%)",
+      color: "white",
+    });
+  };
+
   return (
     <section className="hero-section">
       <Navbar />
@@ -39,6 +54,8 @@ export default function Hero() {
           <a
             onMouseEnter={ctaHover}
             onMouseOut={ctaHoverOut}
+            onMouseDown={handleMouseDown}
+            onMouseUp={handleMouseUp}
             href="#"
             className="hero-cta-button"
             style={cta}
