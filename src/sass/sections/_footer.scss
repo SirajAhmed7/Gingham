@@ -1,0 +1,68 @@
+.footer {
+  &-section {
+    padding: 6.4rem 0 4.8rem;
+    background-color: $color-text-white;
+    color: $color-footer-text;
+    font-family: $josefin;
+  }
+
+  &-box {
+    display: flex;
+    gap: 6.4rem;
+  }
+
+  &-brand-logo {
+    margin-bottom: 4.8rem;
+  }
+
+  &-socials-link:link,
+  &-socials-link:visited {
+    display: inline-block;
+    transition: all 0.2s ease;
+  }
+
+  &-socials-link:nth-child(2) {
+    margin: 0 2.4rem 0 2.4rem;
+  }
+
+  &-socials-link:hover,
+  &-socials-link:active {
+    opacity: 0.85;
+  }
+
+  &-nav-box {
+    margin-left: auto;
+  }
+
+  &-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  &-nav-link a:link,
+  &-nav-link a:visited {
+    color: $color-footer-text;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: all 0.2s ease;
+  }
+
+  &-nav-link a:hover,
+  &-nav-link a:active {
+    color: rgba($color-bg, 0.5);
+  }
+
+  &-cta-title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.copyright {
+  margin-top: 6.4rem;
+  font-size: 1.4rem;
+  color: rgba($color-bg, 0.5);
+}

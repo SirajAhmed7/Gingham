@@ -6,6 +6,45 @@
   text-align: center;
 }
 
+.small-cta:link,
+.small-cta:visited {
+  background-color: $color-white;
+  color: $color-bg !important;
+  padding: 1.2rem 2.5rem;
+  border-radius: 4px;
+  transition: 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid $color-white;
+  text-decoration: none;
+}
+
+.small-cta:hover {
+  background-color: transparent;
+  color: $color-white !important;
+  backdrop-filter: blur(3px) saturate(110%);
+  -webkit-backdrop-filter: blur(3px) saturate(110%);
+}
+
+.small-cta:active {
+  background-color: rgba($color-white, 0.3);
+  color: $color-white;
+  backdrop-filter: blur(3px) saturate(110%);
+  -webkit-backdrop-filter: blur(3px) saturate(110%);
+}
+
+.small-cta.small-cta-dark {
+  background-color: rgba($color-bg, 0.8) !important;
+  color: $color-text-white !important;
+  font-size: 1.8rem;
+}
+
+.small-cta.small-cta-dark:hover {
+  background-color: transparent !important;
+  color: rgba($color-bg, 0.8) !important;
+  border: 1px solid rgba($color-bg, 0.8);
+}
+
 .cta-box {
   display: inline-block;
   overflow: hidden;
@@ -57,25 +96,24 @@
 }
 
 .section-text {
-  font-family: $cardo;
+  font-family: $josefin;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 175%;
-  letter-spacing: 0.01em;
-  color: $color-text-white;
+  font-size: 1.8rem;
+  line-height: 34px;
   margin-top: 2.4rem;
   margin-bottom: 3.2rem;
-  max-width: 37rem;
+  max-width: 38rem;
+  color: $color-text-white-light;
 }
 
 .section-link {
   &:link,
   &:visited {
-    font-family: $cardo;
-    font-weight: 700;
+    font-family: $josefin;
+    font-weight: 500;
     font-size: 24px;
     line-height: 32px;
-    color: $color-text-white;
+    color: $color-text-white-light;
     text-decoration: none;
   }
 

@@ -4,13 +4,14 @@
   }
 
   &-text {
-    font-family: $cardo;
+    font-family: $josefin;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 185%;
+    font-size: 2rem;
+    line-height: 38px;
+    color: $color-text-white-light;
     max-width: 76rem;
     margin: 2.4rem auto 0;
     text-align: center;
-    letter-spacing: 0.02em;
+    // letter-spacing: 0.02em;
   }
 }

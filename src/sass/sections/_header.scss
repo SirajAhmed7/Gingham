@@ -37,54 +37,54 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  .navlink-box {
-    display: flex;
-    gap: 4.8rem;
-    align-items: center;
+.navlink-box {
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.navlink {
+  &:link,
+  &:visited {
+    font-family: $josefin;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: $color-white;
+    transition: 0.15s ease;
   }
 
-  .navlink {
-    &:link,
-    &:visited {
-      font-family: $josefin;
-      font-weight: 500;
-      font-size: 1.6rem;
-      text-decoration: none;
-      color: $color-white;
-      transition: 0.15s ease;
-    }
+  &:hover,
+  &:active {
+    color: rgba($color-white, 0.7);
+  }
 
-    &:hover,
-    &:active {
-      color: rgba($color-white, 0.7);
-    }
+  &-cta:link,
+  &-cta:visited {
+    background-color: $color-white;
+    color: $color-bg;
+    padding: 1.2rem 2.5rem;
+    border-radius: 4px;
+    transition: 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid $color-white;
+  }
 
-    &-cta:link,
-    &-cta:visited {
-      background-color: $color-white;
-      color: $color-bg;
-      padding: 1.2rem 2.5rem;
-      border-radius: 4px;
-      transition: 0.2s ease;
-      position: relative;
-      overflow: hidden;
-      border: 1px solid $color-white;
-    }
+  &-cta:hover {
+    background-color: transparent;
+    color: $color-white;
+    backdrop-filter: blur(3px) saturate(110%);
+    -webkit-backdrop-filter: blur(3px) saturate(110%);
+  }
 
-    &-cta:hover {
-      background-color: transparent;
-      color: $color-white;
-      backdrop-filter: blur(3px) saturate(110%);
-      -webkit-backdrop-filter: blur(3px) saturate(110%);
-    }
-
-    &-cta:active {
-      background-color: rgba($color-white, 0.3);
-      color: $color-white;
-      backdrop-filter: blur(3px) saturate(110%);
-      -webkit-backdrop-filter: blur(3px) saturate(110%);
-    }
+  &-cta:active {
+    background-color: rgba($color-white, 0.3);
+    color: $color-white;
+    backdrop-filter: blur(3px) saturate(110%);
+    -webkit-backdrop-filter: blur(3px) saturate(110%);
   }
 }
 
@@ -111,11 +111,12 @@
 }
 
 .hero-text {
-  font-family: $cardo;
+  font-family: $josefin;
   font-size: 2rem;
   font-weight: 400;
-  line-height: 33px;
+  line-height: 38px;
   letter-spacing: 0.01em;
   width: 35%;
   margin-bottom: 4.8rem;
+  color: $color-text-white-light;
 }
