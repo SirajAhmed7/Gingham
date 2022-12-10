@@ -1,8 +1,9 @@
-import Essentials from "./Components/essentials/Essentials";
-import FoundIn from "./Components/foundin/FoundIn";
-import Hero from "./Components/hero/Hero";
-import PerfectFit from "./Components/perfectfit/PerfectFit";
-import "./sass/main.scss";
+import Essentials from './Components/essentials/Essentials';
+import FoundIn from './Components/foundin/FoundIn';
+import Hero from './Components/hero/Hero';
+import PerfectFit from './Components/perfectfit/PerfectFit';
+import Styles from './Components/styles/Styles';
+import './sass/main.scss';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <FoundIn />
       <Essentials />
       <PerfectFit />
+      <Styles />
     </div>
   );
 }

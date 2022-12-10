@@ -1,0 +1,96 @@
+.styles {
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.style-card {
+  height: 62rem;
+  font-family: $josefin;
+  font-size: 3.2rem;
+  font-weight: 300;
+  letter-spacing: -0.12em;
+  text-transform: uppercase;
+  padding: 4.8rem 3.2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.7s cubic-bezier(0.25, 0.2, 0, 0.99);
+  // transition: all 0.7s ease;
+
+  display: inline-block;
+  color: $color-text-white;
+  text-decoration: none;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(#000, 0.45),
+    rgba(#000, 0.45),
+    rgba(#000, 0)
+  );
+  background-size: 100% 200%;
+
+  &--bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.8s cubic-bezier(0.25, 0.2, 0, 0.99);
+    // transition: all 0.8s ease;
+  }
+
+  &--text {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  &--pattern {
+    position: absolute;
+    bottom: 6px;
+    left: -16px;
+    transform-origin: top;
+    // transform: scale(0.8);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    background-position-y: 90%;
+
+    & .style-card--bg-img {
+      transform: scale(1.23);
+    }
+
+    & .style-card--text {
+      transform: translateX(6px);
+    }
+
+    & .style-card--pattern {
+      opacity: 1;
+    }
+  }
+}
+
+.winter {
+  background: linear-gradient(
+    to bottom,
+    rgba(#000, 0.25),
+    rgba(#000, 0.25),
+    rgba(#000, 0)
+  );
+  background-size: 100% 200%;
+
+  &:hover .style-card--bg-img {
+    filter: brightness(123%);
+  }
+}
+
+.summer {
+  & .style-card--bg-img {
+    width: 132%;
+    left: -23%;
+  }
+}
