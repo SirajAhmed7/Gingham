@@ -1,3 +1,4 @@
+import Collection from './Components/collection/Collection';
 import Essentials from './Components/essentials/Essentials';
 import FoundIn from './Components/foundin/FoundIn';
 import Hero from './Components/hero/Hero';
@@ -13,6 +14,7 @@ export default function Home() {
       <Essentials />
       <PerfectFit />
       <Styles />
+      <Collection />
     </div>
   );
 }

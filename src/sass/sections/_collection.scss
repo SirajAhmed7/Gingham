@@ -1,0 +1,17 @@
+.collection {
+  &-section {
+    padding: 19.2rem 0;
+  }
+
+  &-box {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    align-items: center;
+  }
+
+  &-imgbox {
+    & img {
+      width: 100%;
+    }
+  }
+}

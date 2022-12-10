@@ -1,6 +1,6 @@
 @mixin nav-button {
   background-color: $color-white;
-  content: "Shop now";
+  content: 'Shop now';
   position: absolute;
   top: 0;
   left: 0;
@@ -18,13 +18,13 @@
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     height: 135%;
     width: 100%;
-    background: url("../../img/cliped-hero-img.webp") no-repeat;
+    background: url('../../img/cliped-hero-img.webp') no-repeat;
     background-position: 100% 0%;
     background-size: 55%;
     z-index: -1;
@@ -118,40 +118,4 @@
   letter-spacing: 0.01em;
   width: 35%;
   margin-bottom: 4.8rem;
-}
-
-.hero-cta-box {
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 4px;
-  border: 1px solid $color-white;
-}
-
-.hero-cta-button {
-  &:link,
-  &:visited {
-    background-color: $color-white;
-    color: $color-bg;
-    font-family: $josefin;
-    font-size: 1.8rem;
-    text-decoration: none;
-    font-weight: 700;
-    padding: 1.6rem 4.2rem;
-    display: inline-block;
-    position: relative;
-    transition: all 0.2s ease, transform 0.2s 0.2s ease;
-  }
-
-  &::after {
-    content: "Shop now";
-    color: $color-white;
-    height: 100%;
-    width: 100%;
-    padding: 1.6rem 4.2rem;
-    background-color: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(100%);
-  }
 }

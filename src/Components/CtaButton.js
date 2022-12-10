@@ -1,8 +1,6 @@
 import { useState } from 'react';
-import CtaButton from '../CtaButton';
-import Navbar from './Navbar';
 
-export default function Hero() {
+export default function CtaButton(props) {
   const [cta, setCta] = useState({});
 
   const ctaHover = function (e) {
@@ -11,8 +9,6 @@ export default function Hero() {
       transform: 'translatey(-100%)',
       color: 'white',
     });
-
-    console.log(e.target);
   };
 
   const ctaHoverOut = function () {
@@ -31,6 +27,7 @@ export default function Hero() {
       color: 'white',
     });
   };
+
   const handleMouseUp = function () {
     setCta({
       backgroundColor: 'transparent',
@@ -40,24 +37,20 @@ export default function Hero() {
   };
 
   return (
-    <section className="hero-section">
-      <Navbar />
-      <div className="hero-content container">
-        <div>
-          <h1 className="main-title">Go beyond</h1>
-          <h1 className="main-title fashion">fashion</h1>
-        </div>
-        <div className="hero-text">
-          Designed to make you look and feel your best. Outfits that match your
-          personality.
-        </div>
-        <CtaButton text="Shop now" />
-      </div>
-      <img
-        src="./img/pattern-svg.svg"
-        className="pattern pattern-hero"
-        draggable="false"
-      />
-    </section>
+    <div className="cta-box">
+      <a
+        onMouseEnter={ctaHover}
+        onMouseOut={ctaHoverOut}
+        onMouseDown={handleMouseDown}
+        onMouseUp={handleMouseUp}
+        href="#"
+        className={`cta-button ${
+          props.text === 'See full collection' && 'col'
+        }`}
+        style={cta}
+      >
+        {props.text}
+      </a>
+    </div>
   );
 }
