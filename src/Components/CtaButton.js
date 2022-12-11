@@ -37,7 +37,7 @@ export default function CtaButton(props) {
   };
 
   return (
-    <div className="cta-box">
+    <div className={`cta-box  ${props.anLeft ? 'an-left' : 'an-up'}`}>
       <a
         onMouseEnter={ctaHover}
         onMouseOut={ctaHoverOut}

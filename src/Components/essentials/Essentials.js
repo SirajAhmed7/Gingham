@@ -1,5 +1,5 @@
-import HeadingH2 from "../HeadingH2";
-import LearnMore from "../LearnMore";
+import HeadingH2 from '../HeadingH2';
+import LearnMore from '../LearnMore';
 
 export default function Essentials() {
   return (
@@ -10,7 +10,7 @@ export default function Essentials() {
         </div>
         <div className="essentials-content">
           <HeadingH2 text="For all your style essentials" />
-          <p className="section-text">
+          <p className="section-text an-up">
             High quality material and premium designs. Find all your style needs
             in one place. Superior fashion choices that will make you stand out
             from the croud.

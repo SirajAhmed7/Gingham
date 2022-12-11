@@ -8,7 +8,7 @@ export default function Collection() {
         <div className="collection-box">
           <div className="collection-content">
             <HeadingH2 text="Collection" />
-            <p className="section-text">
+            <p className="section-text an-up">
               Chose your favourite clothes for every occasion. With a range of
               styles find the perfect match for your pesonality.
             </p>
