@@ -28,7 +28,7 @@ export default function Home() {
         stagger: 0.1,
       });
 
-      // Heading(h2) animation
+      // General float-up animation
       const allUp = gsap.utils.toArray('.an-up');
 
       allUp.forEach(elUp => {
