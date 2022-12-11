@@ -10,16 +10,15 @@ import './sass/main.scss';
 
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import all from 'gsap/all';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   const boxRef = useRef();
 
-  // Hero text animation
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
+      // Hero text animation
       gsap.from('.an-left', {
         x: -150,
         opacity: 0,
@@ -28,12 +27,8 @@ export default function Home() {
         delay: 0.5,
         stagger: 0.1,
       });
-    }, boxRef);
-    return () => ctx.revert();
-  }, []);
 
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
+      // Heading(h2) animation
       const allUp = gsap.utils.toArray('.an-up');
 
       allUp.forEach(elUp => {
@@ -49,6 +44,7 @@ export default function Home() {
         });
       });
 
+      // Brand logo animation
       gsap.from('.an-up-brand', {
         scrollTrigger: {
           trigger: '.an-up-brand',
@@ -61,6 +57,7 @@ export default function Home() {
         stagger: 0.1,
       });
 
+      // Footer animation
       gsap.from('.an-footer', {
         scrollTrigger: {
           trigger: '.an-footer',
