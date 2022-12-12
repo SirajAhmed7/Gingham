@@ -6,13 +6,25 @@
 .pattern {
   position: absolute;
 
+  @media (max-width: 900px) {
+    width: 180px;
+  }
+
   &-hero {
     top: 46%;
     left: -175px;
+
+    @media (max-width: 900px) {
+      left: -155px;
+    }
   }
 
   &-essentials {
     top: 12%;
     right: -175px;
+
+    @media (max-width: 900px) {
+      right: -155px;
+    }
   }
 }

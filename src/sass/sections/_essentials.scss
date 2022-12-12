@@ -2,21 +2,53 @@
   &-section {
     position: relative;
     overflow: hidden;
+    padding-right: 6.4rem;
+
+    // @media (max-width: 950px) {
+    //   padding: 0;
+    // }
   }
 
   &-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+    // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     // grid-template-columns: 0.9fr 1fr;
     align-items: center;
+
+    @media (max-width: 950px) {
+      grid-template-columns: 0.85fr, 1fr;
+    }
+  }
+
+  &-imgbox {
+    @media (max-width: 950px) {
+      align-self: stretch;
+    }
   }
 
   &-imgbox img {
     width: 100%;
+
+    @media (max-width: 950px) {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &-content {
     margin: 0 0 0 19.2rem;
     max-width: 39.1rem;
+    // justify-self: center;
+
+    @media (max-width: 1250px) {
+      max-width: 90%;
+      margin: 0;
+      justify-self: right;
+    }
+
+    @media (max-width: 950px) {
+      padding: 6.4rem 0;
+    }
   }
 }
