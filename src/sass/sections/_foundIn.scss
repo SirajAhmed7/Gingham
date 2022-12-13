@@ -3,6 +3,10 @@
   position: relative;
   z-index: -2;
   background-color: $color-bg-light;
+
+  @media (max-width: 700px) {
+    z-index: 0;
+  }
 }
 
 .logo-container {
@@ -13,6 +17,12 @@
   row-gap: 9.6rem;
   align-items: center;
   justify-content: space-around;
+
+  @media (max-width: 700px) {
+    column-gap: 9.6rem;
+    justify-content: space-around;
+    row-gap: 6.4rem;
+  }
 }
 
 .top {

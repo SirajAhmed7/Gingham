@@ -6,11 +6,15 @@
     // @media (max-width: 1200px) {
     //   grid-template-columns: repeat(2, 1fr);
     // }
+
+    @media (max-width: 700px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }
 
 .style-card {
-  height: 62rem;
+  height: 64rem;
   font-family: $josefin;
   font-size: 3.2rem;
   font-weight: 300;
@@ -26,6 +30,10 @@
   display: inline-block;
   color: $color-text-white;
   text-decoration: none;
+
+  @media (max-width: 700px) {
+    height: 51.2rem;
+  }
 
   background: linear-gradient(
     to bottom,

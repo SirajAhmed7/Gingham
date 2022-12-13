@@ -3,15 +3,23 @@ import CtaButton from '../CtaButton';
 import Navbar from './Navbar';
 
 export default function Hero() {
+  // const [navOpen, setNavOpen] = useState(false);
+
+  // const openNav = function () {
+  //   setNavOpen(prevState => {
+  //     return !prevState;
+  //   });
+  // };
+
   return (
-    <section className="hero-section">
+    <section className={`hero-section`}>
       <Navbar />
       <div className="hero-content container">
-        <div className="an-left">
+        <div className="an-left-hero">
           <h1 className="main-title">Go beyond</h1>
           <h1 className="main-title fashion">fashion</h1>
         </div>
-        <div className="hero-text  an-left">
+        <div className="hero-text  an-left-hero">
           Designed to make you look and feel your best. Outfits that match your
           personality.
         </div>

@@ -14,7 +14,7 @@ export default function Collection() {
             </p>
             <CtaButton text="See full collection" />
           </div>
-          <div className="collection-imgbox">
+          <div className="collection-imgbox an-right">
             <img src="./img/polaroids-min.webp" alt="Polaroids" />
           </div>
         </div>

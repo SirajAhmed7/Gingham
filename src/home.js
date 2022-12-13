@@ -19,13 +19,39 @@ export default function Home() {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       // Hero text animation
-      gsap.from('.an-left', {
+      gsap.from('.an-left-hero', {
         x: -150,
         opacity: 0,
         duration: 1,
         ease: 'power3.out',
         delay: 0.5,
         stagger: 0.1,
+      });
+
+      // Mid images animation
+      gsap.from('.an-left', {
+        scrollTrigger: {
+          trigger: '.an-left',
+          start: 'top 60%',
+        },
+        x: -150,
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+        // delay: 0.5,
+        // stagger: 0.1,
+      });
+      gsap.from('.an-right', {
+        scrollTrigger: {
+          trigger: '.an-right',
+          start: 'top 60%',
+        },
+        x: 150,
+        opacity: 0,
+        duration: 1,
+        ease: 'power3.out',
+        // delay: 0.5,
+        // stagger: 0.1,
       });
 
       // General float-up animation
@@ -61,7 +87,7 @@ export default function Home() {
       gsap.from('.an-footer', {
         scrollTrigger: {
           trigger: '.an-footer',
-          start: 'top 95%',
+          start: '-130 95%',
         },
         y: 150,
         opacity: 0,

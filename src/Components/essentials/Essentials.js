@@ -5,7 +5,7 @@ export default function Essentials() {
   return (
     <section className="essentials-section">
       <div className="essentials-box">
-        <div className="essentials-imgbox">
+        <div className="essentials-imgbox an-left">
           <img src="./img/mid-section-min.jpg" alt="Image" />
         </div>
         <div className="essentials-content">

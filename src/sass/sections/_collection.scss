@@ -7,9 +7,40 @@
     display: grid;
     grid-template-columns: 1fr 1.3fr;
     align-items: center;
+
+    @media (max-width: 700px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      row-gap: 6.4rem;
+    }
+
+    & .section-heading {
+      @media (max-width: 700px) {
+        text-align: center;
+      }
+    }
+
+    & .section-text {
+      @media (max-width: 700px) {
+        max-width: 51.2rem;
+        text-align: center;
+      }
+    }
+
+    & .cta-box {
+      @media (max-width: 700px) {
+        max-width: max-content;
+        // margin-left: 27.8%;
+        margin: 0 auto;
+      }
+    }
   }
 
   &-imgbox {
+    @media (max-width: 700px) {
+      grid-row: 1;
+    }
+
     & img {
       width: 100%;
       filter: brightness(110%);

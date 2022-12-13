@@ -9,6 +9,10 @@
   &-box {
     display: flex;
     gap: 6.4rem;
+
+    @media (max-width: 700px) {
+      flex-wrap: wrap;
+    }
   }
 
   &-brand-logo {

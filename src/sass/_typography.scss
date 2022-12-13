@@ -46,7 +46,7 @@
 }
 
 .cta-box {
-  display: inline-block;
+  max-width: max-content;
   overflow: hidden;
   border-radius: 4px;
   border: 0.01em solid $color-white;
