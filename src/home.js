@@ -70,7 +70,7 @@ export default function Home() {
         gsap.from(elUp, {
           scrollTrigger: {
             trigger: elUp,
-            start: '-100 80%',
+            start: '-100 85%',
           },
           y: 150,
           opacity: 0,
