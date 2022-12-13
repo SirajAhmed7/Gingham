@@ -29,29 +29,38 @@ export default function Home() {
       });
 
       // Mid images animation
-      gsap.from('.an-left', {
-        scrollTrigger: {
-          trigger: '.an-left',
-          start: 'top 60%',
-        },
-        x: -150,
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out',
-        // delay: 0.5,
-        // stagger: 0.1,
+      const allLeft = gsap.utils.toArray('.an-left');
+
+      allLeft.forEach(elLeft => {
+        gsap.from(elLeft, {
+          scrollTrigger: {
+            trigger: elLeft,
+            start: 'top 60%',
+          },
+          x: -100,
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out',
+          // delay: 0.5,
+          // stagger: 0.1,
+        });
       });
-      gsap.from('.an-right', {
-        scrollTrigger: {
-          trigger: '.an-right',
-          start: 'top 60%',
-        },
-        x: 150,
-        opacity: 0,
-        duration: 1,
-        ease: 'power3.out',
-        // delay: 0.5,
-        // stagger: 0.1,
+
+      const allRight = gsap.utils.toArray('.an-right');
+
+      allRight.forEach(elRight => {
+        gsap.from(elRight, {
+          scrollTrigger: {
+            trigger: elRight,
+            start: 'top 60%',
+          },
+          x: 100,
+          opacity: 0,
+          duration: 1,
+          ease: 'power3.out',
+          // delay: 0.5,
+          // stagger: 0.1,
+        });
       });
 
       // General float-up animation

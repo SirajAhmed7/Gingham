@@ -1,6 +1,10 @@
 .perfectfit {
   &-section {
     padding: 19.2rem 6.4rem;
+
+    @media (max-width: 500px) {
+      background-color: $color-bg-light;
+    }
   }
 
   &-text {
