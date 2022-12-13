@@ -24,7 +24,16 @@
   @media (max-width: 700px) {
     background-image: url('../../img/cliped-hero-img-dark-full.webp');
     background-size: cover;
+    background-position: 45%;
+  }
+
+  @media (max-width: 500px) {
+    background-size: cover;
     // padding: 3.2rem;
+  }
+
+  @media (max-width: 500px) {
+    padding: 3.2rem;
   }
 
   &::after {
@@ -121,6 +130,10 @@
   @media (max-width: 900px) {
     margin: 12% auto 8%;
   }
+
+  @media (max-width: 500px) {
+    margin: 18% auto 16%;
+  }
 }
 
 .main-title {
@@ -142,6 +155,10 @@
 
   @media (max-width: 900px) {
     font-size: 8.6rem;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 7.2rem;
   }
 }
 

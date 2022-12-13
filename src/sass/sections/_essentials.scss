@@ -4,9 +4,9 @@
     overflow: hidden;
     padding-right: 6.4rem;
 
-    // @media (max-width: 950px) {
-    //   padding: 0;
-    // }
+    @media (max-width: 500px) {
+      padding: 0;
+    }
   }
 
   &-box {
@@ -20,8 +20,9 @@
       grid-template-columns: 0.85fr, 1fr;
     }
 
-    @media (max-width: 700px) {
-      grid-template-columns: 0.85fr, 1fr;
+    @media (max-width: 500px) {
+      grid-template-columns: 1fr;
+      row-gap: 9.6rem;
     }
   }
 
@@ -53,6 +54,27 @@
 
     @media (max-width: 950px) {
       padding: 6.4rem 0;
+    }
+
+    @media (max-width: 500px) {
+      padding: 0;
+      justify-self: center;
+      max-width: unset;
+      padding: 0 3.2rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .essentials-section {
+    .section-heading,
+    .section-text,
+    .an-up {
+      text-align: center;
+    }
+
+    .section-text {
+      max-width: fit-content;
     }
   }
 }
