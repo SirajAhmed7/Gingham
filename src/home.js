@@ -35,7 +35,7 @@ export default function Home() {
         gsap.from(elLeft, {
           scrollTrigger: {
             trigger: elLeft,
-            start: 'top center',
+            start: 'top 60%',
           },
           x: -100,
           opacity: 0,
@@ -52,7 +52,7 @@ export default function Home() {
         gsap.from(elRight, {
           scrollTrigger: {
             trigger: elRight,
-            start: 'top center',
+            start: 'top 60%',
           },
           x: 100,
           opacity: 0,
